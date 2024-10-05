@@ -1,0 +1,24 @@
+# mods.toml file for your mod
+modLoader="javafml" # Mod loader type
+loaderVersion="[36,)" # Version of Forge Mod Loader required for 1.18.2 (Adjust if needed)
+license="MIT" # License under which the mod is released
+issueTrackerURL="https://github.com/your-repo/issues" # Replace with your issue tracker URL or GitHub repo
+
+[[mods]]
+modId="inventorylossmod" # Your mod's ID (no spaces or special characters)
+version="1.0.0" # Version of your mod
+displayName="Inventory Loss Mod" # Display name for your mod
+
+# Description of your mod. You can keep this brief or detailed as necessary
+description='''
+This mod reduces inventory loss by only dropping 1/3 of your inventory when you die,
+allowing you to keep the remaining 2/3 in your inventory.
+'''
+
+# Optional: Provide credits to any contributors or special thanks
+[[dependencies.inventorylossmod]]
+modId="forge"
+mandatory=true
+versionRange="[36.1.0,)"
+ordering="NONE"
+side="BOTH"
